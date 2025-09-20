@@ -1,22 +1,33 @@
 # ntg_task
 
-A new Flutter project.
+Overview
+A mini e-commerce Flutter app implementing Home and Cart pages based on provided XD designs.  
+The app demonstrates clean architecture, API integration, responsive UI, and state management.
 
-## Getting Started
-```
-dart run easy_localization:generate -S assets/translations -O lib/core/localization -f keys -o locale_keys.g.dart
-```
-```
-flutter pub run build_runner build --delete-conflicting-outputs
-```
+Features
+Home Page with bottom navigation, local banners, categories from API, products grid, and shimmer loading animation
+Cart Page with add-to-cart, cart summary, total price calculation, and simulated cart actions
+Product details page
+Light/dark mode support
+Basic localization (English/Arabic)
+Unit tests
 
-This project is a starting point for a Flutter application.
+API Endpoints Used
+Products: https://fakestoreapi.com/products
+Product: https://fakestoreapi.com/products/1
+Categories: https://fakestoreapi.com/products/categories
 
-A few resources to get you started if this is your first Flutter project:
+Folder Structure
+lib/core/ Shared logic (assets, DI, helpers, localization, networking, router, services, theme, widgets)
+lib/features/ Feature modules (cart, home)
+assets/ Images and translations
+test/ Unit test for cart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+State Management
+Cubit (from the `flutter_bloc` package) is used for state management.  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Localization
+Supports English and Arabic via JSON files in `assets/translations/`.
+
+Light/Dark Mode
+Theme switching is supported using Flutter’s built-in theming.
