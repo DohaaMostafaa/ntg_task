@@ -10,10 +10,11 @@ Cart Page with add-to-cart, cart summary, total price calculation, and simulated
 Product details page
 Light/dark mode support
 Basic localization (English/Arabic)
-Unit/widget tests
+Unit tests
 
 API Endpoints Used
 Products: https://fakestoreapi.com/products
+Product: https://fakestoreapi.com/products/1
 Categories: https://fakestoreapi.com/products/categories
 
 Folder Structure
